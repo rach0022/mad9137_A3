@@ -6,14 +6,14 @@
 ## Marks Rubric
 Create the views, and viewController files (4pt)
 
-- [ ] Create a Single View application project (1pt)
-- [ ] Add 2 more views (1pt)
-- [ ] Add 2 new ViewController files and assign them to the new views (2pt)
+- [x] Create a Single View application project (1pt)
+- [x] Add 2 more views (1pt)
+- [x] Add 2 new ViewController files and assign them to the new views (2pt)
 
 Make a class called “Page” to hold all the info about a single page in the story (6pt)
 
-- [ ] make file with correct name (1pt)
-- [ ] make a class with the four properties (5pt)
+- [x] make file with correct name (1pt)
+- [x] make a class with the four properties (5pt)
 
 In the first viewController, make an A/B tree structure using Page objects that hold your story (10pt)
 
@@ -58,3 +58,6 @@ Customize your application (34pt)
 
 Total: 100pt
 
+## Bugs/ Look Into: 
+- [ ] Learn how to unwrap optionals in class either using property observers or get only variables? To avoid having to unwrap constantly in the program.
+- [ ] Learn how to change the background colour of a page

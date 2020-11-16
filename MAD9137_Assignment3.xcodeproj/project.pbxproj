@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		434340F0255E037700F03CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434340EF255E037700F03CE3 /* AppDelegate.swift */; };
 		434340F2255E037700F03CE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434340F1255E037700F03CE3 /* SceneDelegate.swift */; };
-		434340F4255E037700F03CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434340F3255E037700F03CE3 /* ViewController.swift */; };
 		434340F7255E037700F03CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434340F5255E037700F03CE3 /* Main.storyboard */; };
 		434340F9255E037900F03CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434340F8255E037900F03CE3 /* Assets.xcassets */; };
 		434340FC255E037900F03CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434340FA255E037900F03CE3 /* LaunchScreen.storyboard */; };
 		43434107255E037900F03CE3 /* MAD9137_Assignment3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43434106255E037900F03CE3 /* MAD9137_Assignment3Tests.swift */; };
 		43434112255E037900F03CE3 /* MAD9137_Assignment3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43434111255E037900F03CE3 /* MAD9137_Assignment3UITests.swift */; };
+		434341232563388700F03CE3 /* TreeStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341222563388700F03CE3 /* TreeStructureViewController.swift */; };
+		4343412B256338D200F03CE3 /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343412A256338D200F03CE3 /* SecondLevelViewController.swift */; };
+		43434130256338DE00F03CE3 /* ThirdLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343412F256338DE00F03CE3 /* ThirdLevelViewController.swift */; };
+		434341352563392700F03CE3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341342563392700F03CE3 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		434340EC255E037700F03CE3 /* MAD9137_Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD9137_Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434340EF255E037700F03CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434340F1255E037700F03CE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		434340F3255E037700F03CE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		434340F6255E037700F03CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		434340F8255E037900F03CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434340FB255E037900F03CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		4343410D255E037900F03CE3 /* MAD9137_Assignment3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAD9137_Assignment3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43434111255E037900F03CE3 /* MAD9137_Assignment3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAD9137_Assignment3UITests.swift; sourceTree = "<group>"; };
 		43434113255E037900F03CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434341222563388700F03CE3 /* TreeStructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureViewController.swift; sourceTree = "<group>"; };
+		4343412A256338D200F03CE3 /* SecondLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelViewController.swift; sourceTree = "<group>"; };
+		4343412F256338DE00F03CE3 /* ThirdLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelViewController.swift; sourceTree = "<group>"; };
+		434341342563392700F03CE3 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				434340EF255E037700F03CE3 /* AppDelegate.swift */,
 				434340F1255E037700F03CE3 /* SceneDelegate.swift */,
-				434340F3255E037700F03CE3 /* ViewController.swift */,
 				434340F5255E037700F03CE3 /* Main.storyboard */,
 				434340F8255E037900F03CE3 /* Assets.xcassets */,
 				434340FA255E037900F03CE3 /* LaunchScreen.storyboard */,
 				434340FD255E037900F03CE3 /* Info.plist */,
+				434341222563388700F03CE3 /* TreeStructureViewController.swift */,
+				4343412A256338D200F03CE3 /* SecondLevelViewController.swift */,
+				4343412F256338DE00F03CE3 /* ThirdLevelViewController.swift */,
+				434341342563392700F03CE3 /* Page.swift */,
 			);
 			path = MAD9137_Assignment3;
 			sourceTree = "<group>";
@@ -258,7 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434340F4255E037700F03CE3 /* ViewController.swift in Sources */,
+				434341232563388700F03CE3 /* TreeStructureViewController.swift in Sources */,
+				4343412B256338D200F03CE3 /* SecondLevelViewController.swift in Sources */,
+				434341352563392700F03CE3 /* Page.swift in Sources */,
+				43434130256338DE00F03CE3 /* ThirdLevelViewController.swift in Sources */,
 				434340F0255E037700F03CE3 /* AppDelegate.swift in Sources */,
 				434340F2255E037700F03CE3 /* SceneDelegate.swift in Sources */,
 			);
