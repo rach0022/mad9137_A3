@@ -42,12 +42,12 @@ Update each view’s GUI in the viewWillAppear function for that view (10pt)
 
 Pass the Appropriate Page Object to the Next View(12pt)
 
-- [ ] call the appropriate segue, and pass a ‘sender’ value indicating which button was pressed within the performSegue function in each button action (8pt)
-- [ ] check the 'sender' value you pass to check which button was pressed, and pass the correct Page object to the next view within the prepare(for Segue, sender) function in the 1st and 2nd view (4pt)
+- [x] call the appropriate segue, and pass a ‘sender’ value indicating which button was pressed within the performSegue function in each button action (8pt)
+- [x] check the 'sender' value you pass to check which button was pressed, and pass the correct Page object to the next view within the prepare(for Segue, sender) function in the 1st and 2nd view (4pt)
 
 Restart Button (1pt)
 
-- [ ] The button action within the 3rd view must call the popToRootViewController function to return to the first view (1pt)
+- [x] The button action within the 3rd view must call the popToRootViewController function to return to the first view (1pt)
 
 Customize your application (34pt)
 

@@ -16,6 +16,7 @@ class TreeStructureViewController: UIViewController {
     var pages = [Page]()
     var storyContent = [String]()
     let storyLevels = 2 // the number of levels in the story
+    var sender: Page?
     
     // Outlets for the view controller
     @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
@@ -69,22 +70,43 @@ class TreeStructureViewController: UIViewController {
         
     }
     
-    // action connected to this view controller 2 for the barbutton items
-    
+    // actions connected to this view controller 2 for the barbutton items
     @IBAction func pageABarButtonAction(_ sender: Any) {
+        // first check if pageChoiceA was set and then set the sender as PageChoiceA
+        if let pageA = pages[0].pageChoiceA {
+            self.sender = pageA
+        }
+        performSegue(withIdentifier: "LevelTwoSegue", sender: self)
     }
+    
     @IBAction func pageBBarButtonAction(_ sender: Any) {
+        // first check if pageChoiceB was set and then set the sender as PageChoiceB
+        if let pageB = pages[0].pageChoiceB {
+            self.sender = pageB
+        }
+        performSegue(withIdentifier: "LevelTwoSegue", sender: self)
+    }
+    
+    // prepare function for the segue
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        // first check if the segue is the right one with its identifier LevelTwoSegue
+        if segue.identifier == "LevelTwoSegue" {
+            // lets typecast? (or is this polymorphism?) the desitinationViewController
+            // as the SecondLevelViewController since we confirmed the segue and set the proper page object
+            let destinationViewController = segue.destination as? SecondLevelViewController
+            // **** CAN WE UNWRAP LIKE THIS FOR THE DESTINATION VIEW CONTROLLER? *******
+            destinationViewController?.currentPage = self.sender
+        }
     }
     
 
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+    
     */
 
 }

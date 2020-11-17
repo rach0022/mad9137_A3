@@ -34,6 +34,10 @@ class ThirdLevelViewController: UIViewController {
     }
     
     @IBAction func restartBarButtonAction(_ sender: Any) {
+        // using the reference we have to the navigation controller we can popToRootViewController
+        //  to act as the restart button for this app
+        // *** CAN WE UNWRAP LIKE THIS? *****
+        navigationController?.popToRootViewController(animated: true)
     }
     
     /*

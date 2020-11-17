@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
         </scene>
-        <!--Title-->
+        <!--SecondLevelViewController-->
         <scene sceneID="0hF-9r-9HO">
             <objects>
-                <viewController id="FJI-kx-myg" customClass="SecondLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SecondLevelViewController" id="FJI-kx-myg" customClass="SecondLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4gA-lJ-tSr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,21 +99,17 @@
                         <outlet property="levelTwoTextView" destination="9ql-zT-Htl" id="D8K-zd-HX9"/>
                         <outlet property="pageABarButtonItem" destination="mhA-BP-NzY" id="ddT-a7-yFc"/>
                         <outlet property="pageBBarButtonItem" destination="BSa-TX-jC1" id="Oqw-dl-Sf1"/>
-                        <segue destination="el7-fe-ngn" kind="push" id="noT-2i-3kU">
-                            <string key="identifier" base64-UTF8="YES">
-EExldmVsVGhyZWVTZWd1ZQ
-</string>
-                        </segue>
+                        <segue destination="el7-fe-ngn" kind="push" identifier="LevelThreeSegue" id="5Tf-if-wVB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dA-I8-8S4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1492.753623188406" y="93.75"/>
         </scene>
-        <!--Title-->
+        <!--ThirdLevelViewController-->
         <scene sceneID="GwY-rN-4X2">
             <objects>
-                <viewController id="el7-fe-ngn" customClass="ThirdLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ThirdLevelViewController" id="el7-fe-ngn" customClass="ThirdLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVM-6m-ZeO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +133,7 @@ EExldmVsVGhyZWVTZWd1ZQ
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="WBc-nn-vgJ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="JBS-K2-txy">
+                        <barButtonItem key="leftBarButtonItem" title="RESTART" id="JBS-K2-txy">
                             <connections>
                                 <action selector="restartBarButtonAction:" destination="el7-fe-ngn" id="6KC-xy-EvG"/>
                             </connections>

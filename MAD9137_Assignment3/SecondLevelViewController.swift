@@ -11,6 +11,7 @@ class SecondLevelViewController: UIViewController {
     
     // Properties for the SecondLevelViewController
     var currentPage: Page?
+    var sender: Page? 
     // Outlets for the SecondLevelViewController
     @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
     @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
@@ -42,19 +43,44 @@ class SecondLevelViewController: UIViewController {
     // Actions connected to the SecondLevelViewController
     
     @IBAction func pageABarButtonAction(_ sender: Any) {
+        // first check if teh curentPage was set then check if
+        // pageChoiceA was set and then set the sender as PageChoiceA
+        if let page = currentPage {
+            if let pageA = page.pageChoiceA {
+                self.sender = pageA
+            }
+        }
+        performSegue(withIdentifier: "LevelThreeSegue", sender: self)
     }
     @IBAction func pageBBarButtonAction(_ sender: Any) {
+        // first check if the curentPage was set then check if
+        // pageChoiceB was set and then set the sender as PageChoiceB
+        if let page = currentPage {
+            if let pageB = page.pageChoiceB {
+                self.sender = pageB
+            }
+        }
+        performSegue(withIdentifier: "LevelThreeSegue", sender: self)
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        // check if the identifier is LevelThreeSegue and then set the destination controller as the
+        // ThirdLevelViewController and the currentPage as the sender
+        if segue.identifier == "LevelThreeSegue" {
+            // *** WHY DO I HAVE TO UNWRAP AS? ****
+            let destinationViewController = segue.destination as? ThirdLevelViewController
+            destinationViewController?.currentPage = self.sender
+        }
     }
     
 
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+    
     */
 
 }
