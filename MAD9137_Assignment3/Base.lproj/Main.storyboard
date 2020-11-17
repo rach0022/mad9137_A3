@@ -15,40 +15,138 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v7V-Xf-rRE">
+                                <rect key="frame" x="64" y="151" width="286" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v7V-Xf-rRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="1lO-Fw-JAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v7V-Xf-rRE" secondAttribute="trailing" constant="64" id="H0C-Ng-7zN"/>
+                            <constraint firstItem="v7V-Xf-rRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="Yop-UR-S8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v7V-Xf-rRE" secondAttribute="bottom" constant="532" id="x4x-jT-gRJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XEN-rf-L3z"/>
+                    <navigationItem key="navigationItem" id="XEN-rf-L3z">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="VGk-cZ-yld">
+                            <connections>
+                                <action selector="pageABarButtonAction:" destination="BYZ-38-t0r" id="wRf-Xu-0WM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="5bM-yV-ewx">
+                            <connections>
+                                <action selector="pageBBarButtonAction:" destination="BYZ-38-t0r" id="Qsk-W3-cIb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="levelOneTextView" destination="v7V-Xf-rRE" id="NZh-Fs-cAV"/>
+                        <outlet property="pageABarButtonItem" destination="VGk-cZ-yld" id="Eia-So-XIv"/>
+                        <outlet property="pageBBarButtonItem" destination="5bM-yV-ewx" id="v9F-dW-R7r"/>
+                        <outlet property="pageTextView" destination="v7V-Xf-rRE" id="wPe-XV-LPz"/>
+                        <segue destination="FJI-kx-myg" kind="push" identifier="LevelTwoSegue" id="R65-te-6fj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
         </scene>
-        <!--Second Level View Controller-->
+        <!--Title-->
         <scene sceneID="0hF-9r-9HO">
             <objects>
                 <viewController id="FJI-kx-myg" customClass="SecondLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4gA-lJ-tSr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-zT-Htl">
+                                <rect key="frame" x="64" y="149" width="286" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ydb-et-BpJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ydb-et-BpJ" firstAttribute="bottom" secondItem="9ql-zT-Htl" secondAttribute="bottom" constant="534" id="2W3-WV-y5e"/>
+                            <constraint firstItem="9ql-zT-Htl" firstAttribute="leading" secondItem="Ydb-et-BpJ" secondAttribute="leading" constant="64" id="UlQ-uR-927"/>
+                            <constraint firstItem="Ydb-et-BpJ" firstAttribute="trailing" secondItem="9ql-zT-Htl" secondAttribute="trailing" constant="64" id="Vy6-Q0-VKn"/>
+                            <constraint firstItem="9ql-zT-Htl" firstAttribute="top" secondItem="Ydb-et-BpJ" secondAttribute="top" constant="61" id="vTi-k2-8Wc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="EwF-2u-XwI">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="mhA-BP-NzY">
+                            <connections>
+                                <action selector="pageABarButtonAction:" destination="FJI-kx-myg" id="QHC-B7-6ds"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="BSa-TX-jC1">
+                            <connections>
+                                <action selector="pageBBarButtonAction:" destination="FJI-kx-myg" id="EpQ-ZD-yhb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="levelTwoTextView" destination="9ql-zT-Htl" id="D8K-zd-HX9"/>
+                        <outlet property="pageABarButtonItem" destination="mhA-BP-NzY" id="ddT-a7-yFc"/>
+                        <outlet property="pageBBarButtonItem" destination="BSa-TX-jC1" id="Oqw-dl-Sf1"/>
+                        <segue destination="el7-fe-ngn" kind="push" id="noT-2i-3kU">
+                            <string key="identifier" base64-UTF8="YES">
+EExldmVsVGhyZWVTZWd1ZQ
+</string>
+                        </segue>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dA-I8-8S4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1492.753623188406" y="93.75"/>
         </scene>
-        <!--Third Level View Controller-->
+        <!--Title-->
         <scene sceneID="GwY-rN-4X2">
             <objects>
                 <viewController id="el7-fe-ngn" customClass="ThirdLevelViewController" customModule="MAD9137_Assignment3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVM-6m-ZeO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-EE-TSH">
+                                <rect key="frame" x="64" y="147" width="286" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rLl-0y-cKL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rLl-0y-cKL" firstAttribute="trailing" secondItem="MGI-EE-TSH" secondAttribute="trailing" constant="64" id="2Vz-Im-8Ps"/>
+                            <constraint firstItem="MGI-EE-TSH" firstAttribute="top" secondItem="rLl-0y-cKL" secondAttribute="top" constant="59" id="LRq-5T-xYD"/>
+                            <constraint firstItem="rLl-0y-cKL" firstAttribute="bottom" secondItem="MGI-EE-TSH" secondAttribute="bottom" constant="536" id="X0m-7u-vJB"/>
+                            <constraint firstItem="MGI-EE-TSH" firstAttribute="leading" secondItem="rLl-0y-cKL" secondAttribute="leading" constant="64" id="t9C-fg-WeV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="WBc-nn-vgJ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="JBS-K2-txy">
+                            <connections>
+                                <action selector="restartBarButtonAction:" destination="el7-fe-ngn" id="6KC-xy-EvG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="levelThreeTextView" destination="MGI-EE-TSH" id="iiS-pi-Qad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwC-QZ-T8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,6 +172,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

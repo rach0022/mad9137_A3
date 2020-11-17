@@ -8,11 +8,24 @@
 import UIKit
 
 class SecondLevelViewController: UIViewController {
-
+    
+    // Properties for the SecondLevelViewController
+    // Outlets for the SecondLevelViewController
+    @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var levelTwoTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    // Actions connected to the SecondLevelViewController
+    
+    @IBAction func pageABarButtonAction(_ sender: Any) {
+    }
+    @IBAction func pageBBarButtonAction(_ sender: Any) {
     }
     
 

@@ -9,13 +9,20 @@ import UIKit
 
 class ThirdLevelViewController: UIViewController {
 
+    // Properties for Level Three View Controller
+    // outlets for the ThirdLevelViewController
+    @IBOutlet weak var levelThreeTextView: UITextView!
+    
+    // methods for the ThirdLevelViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func restartBarButtonAction(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

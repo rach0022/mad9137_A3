@@ -16,7 +16,13 @@ class TreeStructureViewController: UIViewController {
     var pages = [Page]()
     var storyContent = [String]()
     let storyLevels = 2 // the number of levels in the story
-
+    
+    // Outlets for the view controller
+    @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var levelOneTextView: UITextView!
+    
+    // Methods for the TreeStructureViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +47,13 @@ class TreeStructureViewController: UIViewController {
             self.pages[i].pageChoiceB = self.pages[i + 2 + i]
         }
         
+    }
+    
+    // action connected to this view controller 2 for the barbutton items
+    
+    @IBAction func pageABarButtonAction(_ sender: Any) {
+    }
+    @IBAction func pageBBarButtonAction(_ sender: Any) {
     }
     
 

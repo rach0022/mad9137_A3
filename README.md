@@ -22,17 +22,17 @@ In the first viewController, make an A/B tree structure using Page objects that 
 
 Add navigation controller to first view, and connect the views with segue (5pt)
 
-- [ ] adding Nav Controller on to first view (1pt)
-- [ ] connect the three views with 2 ‘push’ type segues, and give the segues identifier names (4pt)
+- [x] adding Nav Controller on to first view (1pt)
+- [x] connect the three views with 2 ‘push’ type segues, and give the segues identifier names (4pt)
 
 Layout the GUI (18pt)
 
-- [ ] add a TextView to each view (3pt)
-- [ ] add a Nav Item to the top of the 2nd and 3rd view (2pt)
-- [ ] add 2 Bar Button Items to the Nav Bar in the 1st and 2nd view, and 1 to the upper left of the Nav Bar in the 3rd view (5pt)
-- [ ] add outlets and actions to the 2 Bar Buttons, and an outlet for the text-view in the 1st viewController (3pt)
-- [ ] add outlets and actions to the 2 Bar Buttons, and an outlet for the text-view in the 2nd viewController (3pt)
-- [ ] add an action to the Bar Button, and an outlet to the textView in the 3rd viewController (2pt)
+- [x] add a TextView to each view (3pt)
+- [x] add a Nav Item to the top of the 2nd and 3rd view (2pt)
+- [x] add 2 Bar Button Items to the Nav Bar in the 1st and 2nd view, and 1 to the upper left of the Nav Bar in the 3rd view (5pt)
+- [x] add outlets and actions to the 2 Bar Buttons, and an outlet for the text-view in the 1st viewController (3pt)
+- [x] add outlets and actions to the 2 Bar Buttons, and an outlet for the text-view in the 2nd viewController (3pt)
+- [x] add an action to the Bar Button, and an outlet to the textView in the 3rd viewController (2pt)
 
 Update each view’s GUI in the viewWillAppear function for that view (10pt)
 
