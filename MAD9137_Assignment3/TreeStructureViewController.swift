@@ -15,6 +15,7 @@ class TreeStructureViewController: UIViewController {
     // of the alien abduction story
     var pages = [Page]()
     var storyContent = [String]()
+    let storyLevels = 2 // the number of levels in the story
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class TreeStructureViewController: UIViewController {
         // now lets set up the A-B Tree Structure between the page elements knowing that page 1 (index 0)
         // will point to either page 2 or 3 index(1 or 2), page 2 will point to either 4 or 5 and page 3
         // will point to either 3 point to page 6 or 7 (index 5 or 6)
-        for i in 0...2 {
+        for i in 0...self.storyLevels {
             self.pages[i].pageChoiceA = self.pages[i + 1 + i]
             self.pages[i].pageChoiceB = self.pages[i + 2 + i]
         }
