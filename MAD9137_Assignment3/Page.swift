@@ -12,15 +12,20 @@ class Page {
     // properties for the page class
     // all will be nullable for the start until they are intitialized
     // A page number int that will reference this objects page number
-    var pageNumber: Int {
-        willSet {
-            guard newValue >= 0 else {
-                print("Page number must not be negative")
-                return
-            }
-            self.pageNumber = newValue
-        }
-    }
+//    var _pageNumber: Int?
+    var pageNumber: Int?
+//    {
+//        get {
+//            return _pageNumber
+//        }
+//        set {
+//            guard newValue! >= 0 else {
+//                print("Page number must not be negative")
+//                return
+//            }
+//            self._pageNumber = newValue
+//        }
+//    }
     
     // pageText will hold the text for the page
     var pageText: String?

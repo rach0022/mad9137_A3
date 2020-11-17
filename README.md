@@ -17,8 +17,8 @@ Make a class called “Page” to hold all the info about a single page in the s
 
 In the first viewController, make an A/B tree structure using Page objects that hold your story (10pt)
 
-- [ ] set page numbers and text for 7 Page objects (7pt)
-- [ ] set links between Pages objects to connect (3pt)
+- [x] set page numbers and text for 7 Page objects (7pt)
+- [x] set links between Pages objects to connect (3pt)
 
 Add navigation controller to first view, and connect the views with segue (5pt)
 
