@@ -10,6 +10,7 @@ import UIKit
 class ThirdLevelViewController: UIViewController {
 
     // Properties for Level Three View Controller
+    var currentPage: Page?
     // outlets for the ThirdLevelViewController
     @IBOutlet weak var levelThreeTextView: UITextView!
     
@@ -17,7 +18,19 @@ class ThirdLevelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // First unwrap the currentPage object and then set the
+        // title for the page and the text for levelThreeTextView
+        // First lets check if we have a page set up and unwrap it
+        if let page = currentPage {
+            // now we can set up the title, page text and barButtonItems
+            // following the same format as the TreeStructureViewController
+            if let pageNum = page.pageNumber {
+                self.title = "\(pageNum)"
+            }
+            if let pageText = page.pageText {
+                levelThreeTextView.text = "\(pageText)"
+            }
+        }
     }
     
     @IBAction func restartBarButtonAction(_ sender: Any) {

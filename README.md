@@ -36,9 +36,9 @@ Layout the GUI (18pt)
 
 Update each view’s GUI in the viewWillAppear function for that view (10pt)
 
-- [ ] display the current pageNumber value in the navItem’s title for each view (3pt)
-- [ ] display the pageText in the textView for each view (3pt)
-- [ ] display the pageNumber for the pageChoiceA and pageChoiceB in the barButtonItem’s title text (4pt)
+- [x] display the current pageNumber value in the navItem’s title for each view (3pt)
+- [x] display the pageText in the textView for each view (3pt)
+- [x] display the pageNumber for the pageChoiceA and pageChoiceB in the barButtonItem’s title text (4pt)
 
 Pass the Appropriate Page Object to the Next View(12pt)
 

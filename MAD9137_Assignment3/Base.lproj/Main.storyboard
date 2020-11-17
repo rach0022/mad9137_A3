@@ -50,7 +50,6 @@
                         <outlet property="levelOneTextView" destination="v7V-Xf-rRE" id="NZh-Fs-cAV"/>
                         <outlet property="pageABarButtonItem" destination="VGk-cZ-yld" id="Eia-So-XIv"/>
                         <outlet property="pageBBarButtonItem" destination="5bM-yV-ewx" id="v9F-dW-R7r"/>
-                        <outlet property="pageTextView" destination="v7V-Xf-rRE" id="wPe-XV-LPz"/>
                         <segue destination="FJI-kx-myg" kind="push" identifier="LevelTwoSegue" id="R65-te-6fj"/>
                     </connections>
                 </viewController>

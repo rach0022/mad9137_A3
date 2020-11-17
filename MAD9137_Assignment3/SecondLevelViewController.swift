@@ -10,6 +10,7 @@ import UIKit
 class SecondLevelViewController: UIViewController {
     
     // Properties for the SecondLevelViewController
+    var currentPage: Page?
     // Outlets for the SecondLevelViewController
     @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
     @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
@@ -18,7 +19,24 @@ class SecondLevelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // First lets check if we have a page set up and unwrap it
+        if let page = currentPage {
+            // now we can set up the title, page text and barButtonItems
+            // following the same format as the TreeStructureViewController
+            if let pageNum = page.pageNumber {
+                self.title = "\(pageNum)"
+            }
+            if let pageText = page.pageText {
+                levelTwoTextView.text = "\(pageText)"
+            }
+            // ******CANNOT UNWRAP LIKE THIS, ASK ABOUT OPTIONALS IN CLASSES IN CLASS *********
+            if let pageANum = page.pageChoiceA?.pageNumber {
+                pageABarButtonItem.title = "Choice: \(pageANum)"
+            }
+            if let pageBNum = page.pageChoiceB?.pageNumber {
+                pageBBarButtonItem.title = "Choice: \(pageBNum)"
+            }
+        }
     }
     
     // Actions connected to the SecondLevelViewController
