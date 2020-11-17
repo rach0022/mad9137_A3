@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v7V-Xf-rRE">
-                                <rect key="frame" x="64" y="151" width="286" height="179"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v7V-Xf-rRE">
+                                <rect key="frame" x="64" y="151" width="286" height="355"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -30,8 +30,8 @@
                         <constraints>
                             <constraint firstItem="v7V-Xf-rRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="1lO-Fw-JAu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v7V-Xf-rRE" secondAttribute="trailing" constant="64" id="H0C-Ng-7zN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v7V-Xf-rRE" secondAttribute="bottom" constant="356" id="Lg3-O2-sgf"/>
                             <constraint firstItem="v7V-Xf-rRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="Yop-UR-S8a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v7V-Xf-rRE" secondAttribute="bottom" constant="532" id="x4x-jT-gRJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XEN-rf-L3z">
@@ -65,8 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-zT-Htl">
-                                <rect key="frame" x="64" y="149" width="286" height="179"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-zT-Htl">
+                                <rect key="frame" x="64" y="149" width="286" height="355"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -77,7 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="Ydb-et-BpJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ydb-et-BpJ" firstAttribute="bottom" secondItem="9ql-zT-Htl" secondAttribute="bottom" constant="534" id="2W3-WV-y5e"/>
+                            <constraint firstItem="Ydb-et-BpJ" firstAttribute="bottom" secondItem="9ql-zT-Htl" secondAttribute="bottom" constant="358" id="6pa-Nx-fGD"/>
                             <constraint firstItem="9ql-zT-Htl" firstAttribute="leading" secondItem="Ydb-et-BpJ" secondAttribute="leading" constant="64" id="UlQ-uR-927"/>
                             <constraint firstItem="Ydb-et-BpJ" firstAttribute="trailing" secondItem="9ql-zT-Htl" secondAttribute="trailing" constant="64" id="Vy6-Q0-VKn"/>
                             <constraint firstItem="9ql-zT-Htl" firstAttribute="top" secondItem="Ydb-et-BpJ" secondAttribute="top" constant="61" id="vTi-k2-8Wc"/>
@@ -114,8 +114,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-EE-TSH">
-                                <rect key="frame" x="64" y="147" width="286" height="179"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-EE-TSH">
+                                <rect key="frame" x="64" y="147" width="286" height="355"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -128,7 +128,7 @@
                         <constraints>
                             <constraint firstItem="rLl-0y-cKL" firstAttribute="trailing" secondItem="MGI-EE-TSH" secondAttribute="trailing" constant="64" id="2Vz-Im-8Ps"/>
                             <constraint firstItem="MGI-EE-TSH" firstAttribute="top" secondItem="rLl-0y-cKL" secondAttribute="top" constant="59" id="LRq-5T-xYD"/>
-                            <constraint firstItem="rLl-0y-cKL" firstAttribute="bottom" secondItem="MGI-EE-TSH" secondAttribute="bottom" constant="536" id="X0m-7u-vJB"/>
+                            <constraint firstItem="rLl-0y-cKL" firstAttribute="bottom" secondItem="MGI-EE-TSH" secondAttribute="bottom" constant="360" id="dIu-Ok-9Go"/>
                             <constraint firstItem="MGI-EE-TSH" firstAttribute="leading" secondItem="rLl-0y-cKL" secondAttribute="leading" constant="64" id="t9C-fg-WeV"/>
                         </constraints>
                     </view>

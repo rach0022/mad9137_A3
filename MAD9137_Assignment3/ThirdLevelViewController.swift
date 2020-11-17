@@ -25,7 +25,7 @@ class ThirdLevelViewController: UIViewController {
             // now we can set up the title, page text and barButtonItems
             // following the same format as the TreeStructureViewController
             if let pageNum = page.pageNumber {
-                self.title = "\(pageNum)"
+                self.title = "Page: \(pageNum)"
             }
             if let pageText = page.pageText {
                 levelThreeTextView.text = "\(pageText)"
