@@ -38,7 +38,7 @@ class SecondLevelViewController: UIViewController {
             if let pageBNum = page.pageChoiceB?.pageNumber {
                 pageBBarButtonItem.title = "Choice: \(pageBNum)"
             }
-            page.showUITextBanner(textLabel: self.bannerTextLabel)
+            page.showUITheme(textLabel: self.bannerTextLabel, view: self.view)
         }
     }
     

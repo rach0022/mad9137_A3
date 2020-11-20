@@ -31,7 +31,7 @@ class ThirdLevelViewController: UIViewController {
             if let pageText = page.pageText {
                 levelThreeTextView.text = "\(pageText)"
             }
-            page.showUITextBanner(textLabel: self.bannerTextLabel)
+            page.showUITheme(textLabel: self.bannerTextLabel, view: self.view)
         }
     }
     

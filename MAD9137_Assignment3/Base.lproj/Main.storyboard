@@ -18,20 +18,33 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v7V-Xf-rRE">
                                 <rect key="frame" x="64" y="151" width="286" height="355"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i12-kK-wRs">
+                                <rect key="frame" x="46" y="701" width="322" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="5Ov-Kt-byl"/>
+                                    <constraint firstAttribute="height" constant="54" id="xzu-3V-DOh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i12-kK-wRs" secondAttribute="bottom" constant="107" id="1ha-Ry-jhQ"/>
                             <constraint firstItem="v7V-Xf-rRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="1lO-Fw-JAu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v7V-Xf-rRE" secondAttribute="trailing" constant="64" id="H0C-Ng-7zN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v7V-Xf-rRE" secondAttribute="bottom" constant="356" id="Lg3-O2-sgf"/>
                             <constraint firstItem="v7V-Xf-rRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="Yop-UR-S8a"/>
+                            <constraint firstItem="i12-kK-wRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="613" id="bID-Mz-Fpk"/>
+                            <constraint firstItem="i12-kK-wRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="cgA-0n-LTv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i12-kK-wRs" secondAttribute="trailing" constant="46" id="zJT-88-ygC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XEN-rf-L3z">
@@ -47,6 +60,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bannerTextLabel" destination="i12-kK-wRs" id="hyj-1l-5aa"/>
                         <outlet property="levelOneTextView" destination="v7V-Xf-rRE" id="NZh-Fs-cAV"/>
                         <outlet property="pageABarButtonItem" destination="VGk-cZ-yld" id="Eia-So-XIv"/>
                         <outlet property="pageBBarButtonItem" destination="5bM-yV-ewx" id="v9F-dW-R7r"/>
@@ -67,7 +81,6 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-zT-Htl">
                                 <rect key="frame" x="64" y="149" width="286" height="355"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="RRr-vT-bEo"/>
                                 </constraints>
@@ -134,7 +147,6 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGI-EE-TSH">
                                 <rect key="frame" x="64" y="147" width="286" height="355"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="286" id="mW8-Vg-h27"/>
                                 </constraints>

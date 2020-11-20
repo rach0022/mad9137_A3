@@ -89,16 +89,56 @@ class Page {
         self.pageChoiceB = _pageChoiceB
     }
     
-    convenience init(_pageNumber: Int, _pageText: String, _bannerText: String) {
+    convenience init(_pageNumber: Int, _pageText: String, _themeString: String) {
         self.init(_pageNumber: _pageNumber, _pageText: _pageText)
-        self._pageBannerText = _bannerText
+        setTheme(themeString: _themeString)
     }
     
-    // method to show and hide a text label with the banner text set in the page
-    func showUITextBanner(textLabel: UILabel) {
+    // method to show and hide a text label with the banner text set in the page also change
+    // the background colour
+    func showUITheme(textLabel: UILabel, view: UIView) {
         if let bannerText = self._pageBannerText {
             textLabel.text =  bannerText
             textLabel.isHidden = false
+            
+            // make sure to show the page colour if it is set
+            if let colour = self.pageColour {
+                view.backgroundColor = colour
+            }
         }
+    }
+    
+    // method to set the theme of the page
+    // a theme matching to Day, Afternoon, Night
+    // will set the UIColor to the corresponding values
+    // and will display the string in the banner text
+    // parameter is a string "DAY-12:00" will be split on the hyphen
+    // and will set the colour to DAY and display 12:00 in the
+    // banner text
+    func setTheme(themeString: String){
+        // we will use the componenets function to separate on the hyphen and split
+        // the string into an array
+        let themeArray = themeString.components(separatedBy: "-")
+        // using a switch statement we will set the
+        // pageColour using the string
+        switch(themeArray[0].uppercased()){
+        case "DAY":
+            self.pageColour = UIColor.systemBlue
+            break
+        case "AFTERNOON":
+            self.pageColour = UIColor.systemOrange
+            break
+        case "NIGHT":
+            self.pageColour = UIColor.systemPurple
+            break
+        case "ALIEN":
+            self.pageColour = UIColor.systemGreen
+        default:
+            break
+        }
+        
+        // now with the switch statement finished we can
+        // set the pageBannerText to the 2 item in the array
+        self._pageBannerText = themeArray[1]
     }
 }

@@ -22,6 +22,7 @@ class TreeStructureViewController: UIViewController {
     @IBOutlet weak var pageABarButtonItem: UIBarButtonItem!
     @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var levelOneTextView: UITextView!
+    @IBOutlet weak var bannerTextLabel: UILabel!
     
     // Methods for the TreeStructureViewController
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class TreeStructureViewController: UIViewController {
         storyContent.append("Well, there was nothing I could do about it now, it’s almost 4:00 AM in the morning and I definitely had a psychotic nightmare. “Home Invader?” I laughed, “I have nothing to steal, and I work minimum wage. What was I thinking”, I took my phone of its charger and leapt back into my bed. “Network Error huh.” I thought. I couldn’t connect to anything, WIFI, mobile data, I couldn’t event connect to the Bluetooth speaker in my washroom. Something was up, and I had to get to the bottom of it. Knock. Knock. Out of the silence the knocking began again, this time it was below me under the bed. Knock. Knock. It was a loud piecing knock, something straight out of horror movie I thought. After a few minutes I decided to look and as I peeked under my bed a bright light erupted and filled the room. I felt the floors warp inwards and felt weightless for a few moments as everything around me began to break down. Time was no longer meaningful and as if for hours I was in a swirling vortex of light. Eventually in the middle of the vortex formed a hole that began to swallow everything around it, eventually making its way towards me. After touching the mass, I felt my body being accelerated to another point in space, somewhere far and not on Earth. Eventually I approached another light and felt myself being pulled back and slowly stop moving. The lights stopped and I was alone in a dark room. A voice from out of the darkness echoed out to me, “How was the test run Oscar?” The End.") //Page7
         
         for (index, story) in self.storyContent.enumerated() {
-            pages.append(Page(_pageNumber: (index + 1), _pageText: story, _bannerText: "test"))
+            pages.append(Page(_pageNumber: (index + 1), _pageText: story))
         }
         
         // now lets set up the A-B Tree Structure between the page elements knowing that page 1 (index 0)
@@ -48,6 +49,15 @@ class TreeStructureViewController: UIViewController {
             self.pages[i].pageChoiceB = self.pages[i + 2 + i]
         }
         
+        // we can set the themes for individual pages
+        pages[0].setTheme(themeString: "NIGHT-3:00AM")
+        pages[1].setTheme(themeString: "ALIEN-3:20AM")
+        pages[2].setTheme(themeString: "NIGHT-3:20AM")
+        pages[3].setTheme(themeString: "NIGHT-4:30AM")
+        pages[4].setTheme(themeString: "DAY-6:00AM")
+        pages[5].setTheme(themeString: "NIGHT-FOREVER")
+        pages[6].setTheme(themeString: "ALIEN-TIME UNKNOWN")
+        
         // now that all the pages are set up, lets display the page number in the navigation bars title (in the first view controller the current page is pages[0])
         if let pageNum = pages[0].pageNumber {
             self.title = "Page: \(pageNum)"
@@ -57,6 +67,7 @@ class TreeStructureViewController: UIViewController {
         if let pageText = pages[0].pageText {
             levelOneTextView.text = pageText
         }
+        pages[0].showUITheme(textLabel: bannerTextLabel, view: self.view)
         
         // now display pageChoiceA and B's page number in the correspondingBarButtonItem
         // ******** CANNOT UNWRAP LIKE THIS, ASK HOW TO SET UP CLASS TO UNWRAP FOR US **********
