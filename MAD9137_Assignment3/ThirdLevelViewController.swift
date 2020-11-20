@@ -14,6 +14,7 @@ class ThirdLevelViewController: UIViewController {
     // outlets for the ThirdLevelViewController
     @IBOutlet weak var levelThreeTextView: UITextView!
     
+    @IBOutlet weak var bannerTextLabel: UILabel!
     // methods for the ThirdLevelViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,7 @@ class ThirdLevelViewController: UIViewController {
             if let pageText = page.pageText {
                 levelThreeTextView.text = "\(pageText)"
             }
+            page.showUITextBanner(textLabel: self.bannerTextLabel)
         }
     }
     

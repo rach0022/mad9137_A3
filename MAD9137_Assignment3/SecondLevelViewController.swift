@@ -17,6 +17,7 @@ class SecondLevelViewController: UIViewController {
     @IBOutlet weak var pageBBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var levelTwoTextView: UITextView!
     
+    @IBOutlet weak var bannerTextLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +38,7 @@ class SecondLevelViewController: UIViewController {
             if let pageBNum = page.pageChoiceB?.pageNumber {
                 pageBBarButtonItem.title = "Choice: \(pageBNum)"
             }
+            page.showUITextBanner(textLabel: self.bannerTextLabel)
         }
     }
     

@@ -66,7 +66,15 @@ class Page {
     // Custom properties for the Page class
     // pageColour will be used to determine the background colour of the viewController
     var pageColour: UIColor?
-    var pageBannerText: String? //will be used to display a possible scrolling banner 
+    var pageBannerText: String? //will be used to display a possible scrolling banner
+    var _pageBannerText: String? {
+        get {
+            return self.pageBannerText
+        }
+        set {
+            self.pageBannerText = newValue
+        }
+    }
     
     
     // the default init will only need the page number and pageText
@@ -79,5 +87,18 @@ class Page {
         self.init(_pageNumber: _pageNumber, _pageText: _pageText)
         self.pageChoiceA = _pageChoiceA
         self.pageChoiceB = _pageChoiceB
+    }
+    
+    convenience init(_pageNumber: Int, _pageText: String, _bannerText: String) {
+        self.init(_pageNumber: _pageNumber, _pageText: _pageText)
+        self._pageBannerText = _bannerText
+    }
+    
+    // method to show and hide a text label with the banner text set in the page
+    func showUITextBanner(textLabel: UILabel) {
+        if let bannerText = self._pageBannerText {
+            textLabel.text =  bannerText
+            textLabel.isHidden = false
+        }
     }
 }
