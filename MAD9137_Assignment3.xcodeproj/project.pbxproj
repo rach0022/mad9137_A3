@@ -12,30 +12,11 @@
 		434340F7255E037700F03CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434340F5255E037700F03CE3 /* Main.storyboard */; };
 		434340F9255E037900F03CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434340F8255E037900F03CE3 /* Assets.xcassets */; };
 		434340FC255E037900F03CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434340FA255E037900F03CE3 /* LaunchScreen.storyboard */; };
-		43434107255E037900F03CE3 /* MAD9137_Assignment3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43434106255E037900F03CE3 /* MAD9137_Assignment3Tests.swift */; };
-		43434112255E037900F03CE3 /* MAD9137_Assignment3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43434111255E037900F03CE3 /* MAD9137_Assignment3UITests.swift */; };
 		434341232563388700F03CE3 /* TreeStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341222563388700F03CE3 /* TreeStructureViewController.swift */; };
 		4343412B256338D200F03CE3 /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343412A256338D200F03CE3 /* SecondLevelViewController.swift */; };
 		43434130256338DE00F03CE3 /* ThirdLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343412F256338DE00F03CE3 /* ThirdLevelViewController.swift */; };
 		434341352563392700F03CE3 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434341342563392700F03CE3 /* Page.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		43434103255E037900F03CE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 434340E4255E037700F03CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 434340EB255E037700F03CE3;
-			remoteInfo = MAD9137_Assignment3;
-		};
-		4343410E255E037900F03CE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 434340E4255E037700F03CE3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 434340EB255E037700F03CE3;
-			remoteInfo = MAD9137_Assignment3;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		434340EC255E037700F03CE3 /* MAD9137_Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD9137_Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,10 +26,8 @@
 		434340F8255E037900F03CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434340FB255E037900F03CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434340FD255E037900F03CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43434102255E037900F03CE3 /* MAD9137_Assignment3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAD9137_Assignment3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43434106255E037900F03CE3 /* MAD9137_Assignment3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAD9137_Assignment3Tests.swift; sourceTree = "<group>"; };
 		43434108255E037900F03CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4343410D255E037900F03CE3 /* MAD9137_Assignment3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAD9137_Assignment3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43434111255E037900F03CE3 /* MAD9137_Assignment3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAD9137_Assignment3UITests.swift; sourceTree = "<group>"; };
 		43434113255E037900F03CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434341222563388700F03CE3 /* TreeStructureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureViewController.swift; sourceTree = "<group>"; };
@@ -59,20 +38,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		434340E9255E037700F03CE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		434340FF255E037900F03CE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4343410A255E037900F03CE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				434340EC255E037700F03CE3 /* MAD9137_Assignment3.app */,
-				43434102255E037900F03CE3 /* MAD9137_Assignment3Tests.xctest */,
-				4343410D255E037900F03CE3 /* MAD9137_Assignment3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,42 +120,6 @@
 			productReference = 434340EC255E037700F03CE3 /* MAD9137_Assignment3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		43434101255E037900F03CE3 /* MAD9137_Assignment3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43434119255E037900F03CE3 /* Build configuration list for PBXNativeTarget "MAD9137_Assignment3Tests" */;
-			buildPhases = (
-				434340FE255E037900F03CE3 /* Sources */,
-				434340FF255E037900F03CE3 /* Frameworks */,
-				43434100255E037900F03CE3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				43434104255E037900F03CE3 /* PBXTargetDependency */,
-			);
-			name = MAD9137_Assignment3Tests;
-			productName = MAD9137_Assignment3Tests;
-			productReference = 43434102255E037900F03CE3 /* MAD9137_Assignment3Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4343410C255E037900F03CE3 /* MAD9137_Assignment3UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4343411C255E037900F03CE3 /* Build configuration list for PBXNativeTarget "MAD9137_Assignment3UITests" */;
-			buildPhases = (
-				43434109255E037900F03CE3 /* Sources */,
-				4343410A255E037900F03CE3 /* Frameworks */,
-				4343410B255E037900F03CE3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4343410F255E037900F03CE3 /* PBXTargetDependency */,
-			);
-			name = MAD9137_Assignment3UITests;
-			productName = MAD9137_Assignment3UITests;
-			productReference = 4343410D255E037900F03CE3 /* MAD9137_Assignment3UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,14 +131,6 @@
 				TargetAttributes = {
 					434340EB255E037700F03CE3 = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					43434101255E037900F03CE3 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 434340EB255E037700F03CE3;
-					};
-					4343410C255E037900F03CE3 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 434340EB255E037700F03CE3;
 					};
 				};
 			};
@@ -229,8 +148,6 @@
 			projectRoot = "";
 			targets = (
 				434340EB255E037700F03CE3 /* MAD9137_Assignment3 */,
-				43434101255E037900F03CE3 /* MAD9137_Assignment3Tests */,
-				4343410C255E037900F03CE3 /* MAD9137_Assignment3UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,20 +160,6 @@
 				434340FC255E037900F03CE3 /* LaunchScreen.storyboard in Resources */,
 				434340F9255E037900F03CE3 /* Assets.xcassets in Resources */,
 				434340F7255E037700F03CE3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43434100255E037900F03CE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4343410B255E037900F03CE3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,36 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		434340FE255E037900F03CE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43434107255E037900F03CE3 /* MAD9137_Assignment3Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43434109255E037900F03CE3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43434112255E037900F03CE3 /* MAD9137_Assignment3UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		43434104255E037900F03CE3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 434340EB255E037700F03CE3 /* MAD9137_Assignment3 */;
-			targetProxy = 43434103255E037900F03CE3 /* PBXContainerItemProxy */;
-		};
-		4343410F255E037900F03CE3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 434340EB255E037700F03CE3 /* MAD9137_Assignment3 */;
-			targetProxy = 4343410E255E037900F03CE3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		434340F5255E037700F03CE3 /* Main.storyboard */ = {
@@ -481,90 +355,6 @@
 			};
 			name = Release;
 		};
-		4343411A255E037900F03CE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FF6M9JZ85;
-				INFOPLIST_FILE = MAD9137_Assignment3Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.algonquincollege.MAD9137-Assignment3Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAD9137_Assignment3.app/MAD9137_Assignment3";
-			};
-			name = Debug;
-		};
-		4343411B255E037900F03CE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FF6M9JZ85;
-				INFOPLIST_FILE = MAD9137_Assignment3Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.algonquincollege.MAD9137-Assignment3Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAD9137_Assignment3.app/MAD9137_Assignment3";
-			};
-			name = Release;
-		};
-		4343411D255E037900F03CE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FF6M9JZ85;
-				INFOPLIST_FILE = MAD9137_Assignment3UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.algonquincollege.MAD9137-Assignment3UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MAD9137_Assignment3;
-			};
-			name = Debug;
-		};
-		4343411E255E037900F03CE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FF6M9JZ85;
-				INFOPLIST_FILE = MAD9137_Assignment3UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.algonquincollege.MAD9137-Assignment3UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MAD9137_Assignment3;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,24 +372,6 @@
 			buildConfigurations = (
 				43434117255E037900F03CE3 /* Debug */,
 				43434118255E037900F03CE3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		43434119255E037900F03CE3 /* Build configuration list for PBXNativeTarget "MAD9137_Assignment3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4343411A255E037900F03CE3 /* Debug */,
-				4343411B255E037900F03CE3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4343411C255E037900F03CE3 /* Build configuration list for PBXNativeTarget "MAD9137_Assignment3UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4343411D255E037900F03CE3 /* Debug */,
-				4343411E255E037900F03CE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
